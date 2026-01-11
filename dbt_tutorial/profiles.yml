@@ -1,0 +1,21 @@
+dbt_tutorial:
+  outputs:
+    dev:
+      catalog: dbt_tutorial
+      host: dbc-8b5b827f-e1c3.cloud.databricks.com
+      http_path: /sql/1.0/warehouses/f78a57ded4bdb267
+      schema: default
+      threads: 1
+      token: dapi731fbdbd03512ca091c106321d9b177e  ## keep your token id from databricks
+      type: databricks
+## to deploy in prod from dev
+    prod:
+      catalog: dbt_tutorial_prod
+      host: dbc-8b5b827f-e1c3.cloud.databricks.com
+      http_path: /sql/1.0/warehouses/f78a57ded4bdb267
+      schema: default
+      threads: 1
+      token: dapi731fbdbd03512ca091c106321d9b177e
+      type: databricks
+  target: dev
+  
