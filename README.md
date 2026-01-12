@@ -78,7 +78,7 @@ dbt-tutorial/
 
 ### Prerequisites
 
-- Python 3.9+
+- Python 3.13.5
 - Databricks account with SQL Warehouse
 - Databricks Personal Access Token
 
@@ -95,6 +95,8 @@ source venv/bin/activate  # Windows: venv\Scripts\activate
 # Install dependencies
 pip install -r requirements.txt
 ```
+![Databricks Architecture](databricks.png)
+![dbt Data Model](dbt.png)
 
 ### Configuration
 
@@ -151,6 +153,7 @@ dbt docs generate && dbt docs serve
 | `dbt docs serve` | View docs in browser |
 
 ---
+https://github.com/sauhar/dbt-tutorial/blob/master/databricks.png
 
 ## Sample Query
 ```sql
@@ -166,3 +169,4 @@ ORDER BY revenue DESC;
 ```
 
 ---
+
